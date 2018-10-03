@@ -1,0 +1,70 @@
+body
+  background: linear-gradient(to bottom right, #f00, #f0f)
+  display: flex
+  justify-content: center
+  align-items: center
+
+.items
+  width: 100%
+  height: 700px
+  border: 1px solid #fff
+  perspective: 500px
+  overflow: hidden
+  cursor: pointer
+  user-select: none
+  white-space: nowrap
+  padding: 100px
+  transition: all 0.2s
+  transform: scale(0.98)
+
+  &.active
+    background-color: rgba(#fff, 0.3)
+    cursor: grabbing
+    transform: scale(1)
+
+  .item
+    width: 200px
+    height: 100%
+    display: inline-flex
+    justify-content: center
+    align-items: center
+
+    &:nth-child(even)
+      transform: scaleX(1.3) rotateY(40deg)
+
+    &:nth-child(odd)
+      transform: scaleX(1.3) rotateY(-40deg)
+
+    &:nth-child(9n+1)
+      background-color: dodgerblue
+      
+    &:nth-child(9n+2)
+      background-color: goldenrod
+      
+    &:nth-child(9n+3)
+      background-color: paleturquoise
+      
+    &:nth-child(9n+4)
+      background-color: gold
+      
+    &:nth-child(9n+5)
+      background-color: cadetblue
+      
+    &:nth-child(9n+6)
+      background-color: tomato
+      
+    &:nth-child(9n+7)
+      background-color: lightcoral
+      
+    &:nth-child(9n+8)
+      background-color: darkslateblue
+      
+    &:nth-child(9n+9)
+      background-color: rebeccapurple
+
+  
+// .items {
+//   white-space: nowrap;
+//   position: relative;
+//   background: rgba(255,255,255,0.1);
+// }

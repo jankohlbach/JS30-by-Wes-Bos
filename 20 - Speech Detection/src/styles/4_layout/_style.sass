@@ -1,0 +1,25 @@
+body
+  background: linear-gradient(to bottom right, #f00, #f0f)
+
+.words
+  max-width: 500px
+  background-color: #fff
+  border-radius: 5px
+  box-shadow: 0 0 10px #000
+  position: relative
+  outline: none
+  padding: 10px
+  padding-left: 50px
+  margin: 50px auto
+
+  &::before
+    content: ''
+    width: 4px
+    position: absolute
+    top: 0
+    left: 30px
+    bottom: 0
+    border: 1px solid #eee
+
+  p
+    margin-bottom: 30px

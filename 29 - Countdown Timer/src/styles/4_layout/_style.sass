@@ -1,0 +1,51 @@
+body
+  background: linear-gradient(to bottom right, #f00, #f0f)
+  text-align: center
+
+.timer
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+  .timer__controls
+    display: flex
+
+    > *
+      flex: 1
+
+    .timer__button
+      text-transform: uppercase
+      color: #fff
+      border-right: 1px solid #aaa
+      outline: none
+      padding: 10px
+      transition: all 0.2s
+
+      &:hover,
+      &:focus
+        background-color: rgba(#555, 0.5)
+
+    form
+      flex: 1
+      display: flex
+
+      input
+        flex: 1
+        outline: none
+        padding: 20px
+
+  .display
+    flex: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .display__time-left
+      font-size: 200px
+      color: #fff
+      text-shadow: 4px 4px 5px #000
+
+    .display__end-time
+      font-size: 50px
+      color: #fff

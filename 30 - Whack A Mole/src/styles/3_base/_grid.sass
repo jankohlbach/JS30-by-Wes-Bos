@@ -1,0 +1,32 @@
+// grid
+.grid
+  display: block
+  @extend %clearfix
+
+  .col
+    float: left
+    margin-right: 30px
+
+// 2-column grid
+.grid-2-col
+  .col
+    width: calc((100% - 1 * 30px - 1px) / 2)
+
+    &:nth-child(2n)
+      margin-right: 0
+
+// 3-column grid
+.grid-3-col
+  .col
+    width: calc((100% - 2 * 30px - 1px) / 3)
+
+    &:nth-child(3n)
+      margin-right: 0
+
+// 4-column grid
+.grid-4-col
+  .col
+    width: calc((100% - 3 * 30px - 1px) / 4)
+
+    &:nth-child(4n)
+      margin-right: 0

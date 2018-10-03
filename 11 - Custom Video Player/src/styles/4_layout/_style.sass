@@ -1,0 +1,54 @@
+body
+  background: linear-gradient(to bottom right, #f00, #f0f)
+
+.player
+  max-width: 760px
+  max-height: 358px
+  box-shadow: 0 0 10px #000
+  overflow: hidden
+  @extend %center
+
+  &:hover
+    .player__controls
+      transform: translateY(0)
+
+    .player__controls .progress
+      height: 15px
+
+  .player__controls
+    width: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    display: flex
+    flex-wrap: wrap
+    position: absolute
+    bottom: 0
+    transform: translateY(100%) translateY(-5px)
+    transition: transform 0.2s ease
+
+    > *
+      flex: 1
+
+    .progress
+      height: 5px
+      background-color: rgba(0, 0, 0, 0.5)
+      flex-basis: 100%
+      position: relative
+      display: flex
+
+      .progress__filled
+        background-color: #f00
+        flex-basis: 0
+
+    .player__button
+      max-width: 50px
+      color: #fff
+      text-align: center
+      background: none
+      outline: none
+
+      &:hover
+        background-color: rgba(0, 0, 0, 0.5)
+
+    .player__slider
+      height: 30px
+      margin-right: 10px

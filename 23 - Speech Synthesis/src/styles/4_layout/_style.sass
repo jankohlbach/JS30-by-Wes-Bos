@@ -1,0 +1,51 @@
+body
+  background: linear-gradient(to bottom right, #f00, #f0f)
+  display: flex
+  justify-content: center
+  align-items: center
+
+.voiceinator
+  width: 500px
+  background-color: #fff
+  box-shadow: 0 0 10px #000
+  border-radius: 10px
+  position: relative
+  padding: 20px
+
+  h1
+    font-size: 40px
+    text-align: center
+    color: #fff
+    background-color: #ff0066
+    padding: 5px
+    margin-bottom: 10px
+
+  select,
+  input,
+  textarea,
+  button
+    width: 100%
+    background-color: #66ff00
+    outline: none
+    padding: 10px
+    margin: 10px 0
+
+  textarea
+    height: 200px
+    font-size: 20px
+    padding: 20px
+
+  button
+    width: calc(50% - 5px)
+    border-bottom: 5px solid #ffff00
+    float: left
+    transition: all 0.2s
+
+    &:hover
+      opacity: 0.8
+
+    &:first-child
+      margin-right: 10px
+
+    &:last-child
+      margin-left: 10px
