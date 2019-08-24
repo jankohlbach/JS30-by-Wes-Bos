@@ -1,0 +1,34 @@
+// stylelint-disable declaration-property-value-blacklist
+// Vars
+$font-family: 'Arial', sans-serif;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: $font-family;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  width: 100%;
+  padding: 100px;
+}
+
+.one {
+  background: #d8bfd8;
+}
+
+.two {
+  background: #ffe4e1;
+}
+
+.three {
+  background: #ff7f50;
+}
